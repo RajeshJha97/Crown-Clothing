@@ -5,7 +5,7 @@ import {
 
 const SignIn = () => {
   const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopUp();
+    const { user } = await signInWithGooglePopUp(); //this method will return the different response and we destructured the users only
     // console.log(user);
     const userDocRef = await createUserDocumentFromAuth(user);
   };
